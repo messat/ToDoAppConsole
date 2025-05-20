@@ -1,0 +1,14 @@
+/Users/muhammadessat/Desktop/C#/practice/To do app /To Do App/bin/Debug/net8.0/To Do App
+/Users/muhammadessat/Desktop/C#/practice/To do app /To Do App/bin/Debug/net8.0/To Do App.deps.json
+/Users/muhammadessat/Desktop/C#/practice/To do app /To Do App/bin/Debug/net8.0/To Do App.runtimeconfig.json
+/Users/muhammadessat/Desktop/C#/practice/To do app /To Do App/bin/Debug/net8.0/To Do App.dll
+/Users/muhammadessat/Desktop/C#/practice/To do app /To Do App/bin/Debug/net8.0/To Do App.pdb
+/Users/muhammadessat/Desktop/C#/practice/To do app /To Do App/obj/Debug/net8.0/To Do App.GeneratedMSBuildEditorConfig.editorconfig
+/Users/muhammadessat/Desktop/C#/practice/To do app /To Do App/obj/Debug/net8.0/To Do App.AssemblyInfoInputs.cache
+/Users/muhammadessat/Desktop/C#/practice/To do app /To Do App/obj/Debug/net8.0/To Do App.AssemblyInfo.cs
+/Users/muhammadessat/Desktop/C#/practice/To do app /To Do App/obj/Debug/net8.0/To Do App.csproj.CoreCompileInputs.cache
+/Users/muhammadessat/Desktop/C#/practice/To do app /To Do App/obj/Debug/net8.0/To Do App.dll
+/Users/muhammadessat/Desktop/C#/practice/To do app /To Do App/obj/Debug/net8.0/refint/To Do App.dll
+/Users/muhammadessat/Desktop/C#/practice/To do app /To Do App/obj/Debug/net8.0/To Do App.pdb
+/Users/muhammadessat/Desktop/C#/practice/To do app /To Do App/obj/Debug/net8.0/To Do App.genruntimeconfig.cache
+/Users/muhammadessat/Desktop/C#/practice/To do app /To Do App/obj/Debug/net8.0/ref/To Do App.dll
