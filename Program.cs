@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 
 
 namespace ToDoAppTaskTracker
@@ -76,10 +77,18 @@ namespace ToDoAppTaskTracker
         Console.WriteLine($"Added \"{newTask}\" as a task");
         Console.WriteLine();
 
+        using (StreamWriter fileAppendTask = File.AppendText(@"TaskMemory.txt"))
+        {
+          int taskListCount = userList.Count;
+          fileAppendTask.WriteLine($"{taskListCount}. {newTask}");
+        }
+        AllTasks(userList);
         UserEntry();
         UserSwitch(userList);
       }
     }
+
+
 
     static void DeleteTaskBoard(List<string> userList)
     {
@@ -103,6 +112,7 @@ namespace ToDoAppTaskTracker
         Console.WriteLine(formatErr.Message + "\n");
         DeleteTaskBoard(userList);
       }
+      AllTasks(userList);
       UserEntry();
       UserSwitch(userList);
     }
@@ -135,7 +145,10 @@ namespace ToDoAppTaskTracker
         Console.WriteLine();
         userList.RemoveAt(taskNumUpdate - 1);
         string? updateTask = Console.ReadLine();
+        if (updateTask is not null)
+        {
         userList.Insert(taskNumUpdate - 1, updateTask);
+        }
         Console.WriteLine();
         AllTasks(userList);
         UserEntry();
@@ -163,9 +176,22 @@ namespace ToDoAppTaskTracker
 
     static void AllTasks(List<string> userList)
     {
-      for (int i = 0; i < userList.Count; i++)
+      try
       {
-        Console.WriteLine($"{i + 1}. {userList[i]}");
+        using (StreamWriter writeTasks = new StreamWriter(@"TaskMemory.txt"))
+        {
+          DateTime localDate = DateTime.Now;
+          writeTasks.WriteLine($"Tasks for today: {localDate} \n");
+          for (int i = 0; i < userList.Count; i++)
+          {
+            Console.WriteLine($"{i + 1}. {userList[i]}");
+            writeTasks.WriteLine($"{i + 1}. {userList[i]}");
+          }
+        }
+      }
+      catch (Exception e)
+      {
+        Console.WriteLine(e.Message);
       }
       Console.WriteLine();
     }
