@@ -50,4 +50,7 @@ Before running the project locally, ensure you have the following installed:
 | Exit App       | `Q` / `q`    | Exit the task tracker          |
 
 ---
+6. **Creates a text file for the purpose of reading and writing to the file**
+   
+	When the program runs, a text file called "TaskMemory.txt" file is created in the root of this project. The text file is update in live time when the task board is updated in the terminal. Please use BBEdit or open texteditor in vss code on mac which auto-reloads the file upon detecting any changes made.
 
